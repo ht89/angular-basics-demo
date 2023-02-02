@@ -8,6 +8,7 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { ChildComponent } from './second/child/child.component';
 import { ConfigComponent } from './config/config.component';
+import { ConfigWithAsyncPipeComponent } from './config-with-async-pipe/config-with-async-pipe.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ConfigComponent } from './config/config.component';
     SecondComponent,
     ChildComponent,
     ConfigComponent,
+    ConfigWithAsyncPipeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
