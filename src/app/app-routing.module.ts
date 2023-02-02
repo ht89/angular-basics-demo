@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConfigComponent } from './config/config.component';
 import { FirstComponent } from './first/first.component';
 import { ChildComponent } from './second/child/child.component';
 import { SecondComponent } from './second/second.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
     component: SecondComponent,
     children: [{ path: ':id', component: ChildComponent }],
   },
+  { path: 'config', component: ConfigComponent },
   { path: '', redirectTo: '/first-component', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
