@@ -16,12 +16,6 @@ export class ConfigWithAsyncPipeComponent implements OnInit {
   }
 
   showConfig() {
-    this.config$ = this.configService.getConfig().pipe(
-      map((data: Config) => ({
-        heroesUrl: data.heroesUrl,
-        textfile: data.textfile,
-        date: data.date,
-      }))
-    );
+    this.config$ = this.configService.getConfig();
   }
 }

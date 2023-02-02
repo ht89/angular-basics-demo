@@ -1,1 +1,7 @@
-<p>{{ config$ | async | json }}</p>
+<div *ngIf="config$ | async as config">
+  <p>{{ config.heroesUrl }}</p>
+
+  <p>{{ config.textfile }}</p>
+
+  <p>{{ config.date }}</p>
+</div>

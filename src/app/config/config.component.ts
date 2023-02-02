@@ -22,13 +22,8 @@ export class ConfigComponent implements OnInit, OnDestroy {
   }
 
   showConfig() {
-    this.getConfigSub = this.configService.getConfig().subscribe(
-      (data: Config) =>
-        (this.config = {
-          heroesUrl: data.heroesUrl,
-          textfile: data.textfile,
-          date: data.date,
-        })
-    );
+    this.getConfigSub = this.configService
+      .getConfig()
+      .subscribe((data: Config) => (this.config = { ...data }));
   }
 }
