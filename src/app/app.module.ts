@@ -9,6 +9,7 @@ import { SecondComponent } from './second/second.component';
 import { ChildComponent } from './second/child/child.component';
 import { ConfigComponent } from './config/config.component';
 import { ConfigWithAsyncPipeComponent } from './config-with-async-pipe/config-with-async-pipe.component';
+import { HostContextExampleComponent } from './host-context-example/host-context-example.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ConfigWithAsyncPipeComponent } from './config-with-async-pipe/config-wi
     ChildComponent,
     ConfigComponent,
     ConfigWithAsyncPipeComponent,
+    HostContextExampleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
