@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ColspanComponent } from './colspan/colspan.component';
 import { ConfigComponent } from './config/config.component';
 import { FirstComponent } from './first/first.component';
 import { HostContextExampleComponent } from './host-context-example/host-context-example.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   },
   { path: 'config', component: ConfigComponent },
   { path: 'host-context', component: HostContextExampleComponent },
+  { path: 'colspan', component: ColspanComponent },
   { path: '', redirectTo: '/first-component', pathMatch: 'full' }, // redirect to `first-component`
 ];
 

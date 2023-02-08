@@ -10,6 +10,7 @@ import { ChildComponent } from './second/child/child.component';
 import { ConfigComponent } from './config/config.component';
 import { ConfigWithAsyncPipeComponent } from './config-with-async-pipe/config-with-async-pipe.component';
 import { HostContextExampleComponent } from './host-context-example/host-context-example.component';
+import { ColspanComponent } from './colspan/colspan.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HostContextExampleComponent } from './host-context-example/host-context
     ConfigComponent,
     ConfigWithAsyncPipeComponent,
     HostContextExampleComponent,
+    ColspanComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
